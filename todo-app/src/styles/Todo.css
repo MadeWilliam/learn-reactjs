@@ -16,17 +16,17 @@
     transition: opacity 0.4s linear;
 }
 
-.Todo-task.completed {
+.Todo.completed {
     transition: opacity 300ms ease-in-out;
     transition-delay: 200ms;
     opacity: 0.5;
 }
 
-.Todo-task.completed {
-    opacity: 0.6;
+.Todo.completed .Todo-task {
+    /* opacity: 0.6; */
 }
 
-.Todo-task.completed:before {
+.Todo.completed .Todo-task:before {
     content: "";
     position: absolute;
     top: 50%;
@@ -59,6 +59,7 @@
     cursor: pointer;
     color: #fff;
 }
+
 .Todo-edit-form {
     display: flex;
     flex-wrap: wrap;
